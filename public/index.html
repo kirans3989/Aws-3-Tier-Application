@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS 3-Tier Architecture Demo</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AWS 3-Tier Architecture Demo</h1>
+        
+        <div class="tier-info">
+            <h2>Web Tier (Public Subnet)</h2>
+            <p>Simulating: Route53 → CloudFront → ALB → EC2</p>
+        </div>
+
+        <div class="tier-info">
+            <h2>App Tier (Private Subnet)</h2>
+            <p>Business Logic Layer</p>
+        </div>
+
+        <div class="tier-info">
+            <h2>Database Tier (Private Subnet)</h2>
+            <p>Using Supabase (PostgreSQL)</p>
+        </div>
+
+        <div class="demo-controls">
+            <h3>Demo Controls</h3>
+            <input type="text" id="newItem" placeholder="Enter item name">
+            <button onclick="addItem()">Add Item</button>
+            <button onclick="loadItems()">Load Items</button>
+            <div id="itemsList"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,4 @@
+environment = "dev"
+vpc_cidr    = "100.0.0.0/16"
+db_name     = "appdb"
+db_username = "admin"
